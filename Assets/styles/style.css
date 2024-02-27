@@ -12,6 +12,29 @@ body {
   font-size: 16px;
 }
 
+/* ------Fonts/Text ---------- */
+h1, h2 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+a {
+  font-size: 1.25rem;
+}
+
+
+
+/* ------Header style ---------- */
 header {
   display: flex;
   flex-direction: row;
@@ -21,12 +44,14 @@ header {
 
 aside {
   background-color: var(--ltPurple);
-  color: var(--ink);
-  font-weight: bold;
-  font-size: 2.5rem;
   align-self: center;
   margin: 1rem 0;
   padding: 0.5rem 1rem 0.5rem 3rem;
+  border-radius: 2px;
+}
+
+aside h1 {
+  color: var(--ink);
 }
 
 nav {
@@ -38,8 +63,6 @@ nav {
 
 nav a {
   color: var(--ltPurple);
-  font-weight: 600;
-  font-size: 1.25rem;
   margin: 0 0.7rem;
   padding-bottom: 0.25rem;
   border-bottom: 2px solid var(--ltPurple);
@@ -51,3 +74,24 @@ nav a:hover {
   border-color: var(--dusk);
   transform:scale(1.2);
 }
+
+/* ------Header style ---------- */
+.hero {
+  background-image: url("../pexels-pixabay-220118.jpg");
+  height: 300px;
+  position: relative;
+  
+}
+
+.hero h2 {
+  position: absolute;
+  right: 4rem;
+  bottom: 2rem;
+  color: var(--ink);
+  background-color: var(--ltPurple);
+  padding: 0.75rem;
+  border-radius: 2px;
+}
+
+
+/* ------Footer style ---------- */
