@@ -1,19 +1,21 @@
 :root {
-  --black: #06070E;
+  --black: #06070e;
   --ink: #192231;
-  --ltPurple: #BBA7B1;
-  --dusk: #985E6D;
+  --ltPurple: #bba7b1;
+  --dusk: #985e6d;
   --ltGray: #d7d7d7;
 }
 
 body {
   background-color: var(--ltGray);
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
+  color: var(--ink);
 }
 
 /* ------Fonts/Text ---------- */
-h1, h2 {
+h1,
+h2 {
   font-weight: 600;
 }
 
@@ -22,17 +24,18 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.1rem;
 }
 
 h3 {
+  font-size: 2rem;
+}
+h4 {
   font-size: 1.5rem;
 }
 a {
   font-size: 1.25rem;
 }
-
-
 
 /* ------Header style ---------- */
 header {
@@ -58,7 +61,7 @@ nav {
   margin-left: auto;
   margin-right: 2rem;
   display: flex;
-  align-items:center;
+  align-items: center;
 }
 
 nav a {
@@ -66,21 +69,22 @@ nav a {
   margin: 0 0.7rem;
   padding-bottom: 0.25rem;
   border-bottom: 2px solid var(--ltPurple);
+  text-decoration: none;
 }
 
 nav a:hover {
   cursor: pointer;
   color: var(--dusk);
   border-color: var(--dusk);
-  transform:scale(1.2);
+  transform: scale(1.2);
 }
 
-/* ------Header style ---------- */
+/* ------Main Sections style ---------- */
+
 .hero {
   background-image: url("../pexels-pixabay-220118.jpg");
   height: 300px;
   position: relative;
-  
 }
 
 .hero h2 {
@@ -93,5 +97,83 @@ nav a:hover {
   border-radius: 2px;
 }
 
+section {
+  margin: 4rem 5rem 4rem 4rem;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-column-gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+section h3 {
+  text-align: end;
+  border-right: 2px solid var(--ink);
+  padding-right: 2rem;
+}
+
+section p {
+  line-height: 1.5;
+  padding: 0.5rem 1rem;
+}
+
+.inner {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  position: relative;
+}
+
+.bg-img {
+  position: relative;
+  background-size: cover;
+  opacity: 0.4;
+
+}
+
+/* ------About Sections style ---------- */
+img.avatar {
+  height: 150px;
+  min-width: 150px;
+  border-radius: 85px;
+  object-fit: cover;
+  margin-left: 4rem;
+}
+
+/* ------Work Sections style ---------- */
+.main-work {
+  background-image: url("../hydration.png");
+  height: 450px;
+  width: 100%;
+}
+
+.label {
+  position: absolute;
+  bottom: 2rem;
+  color: var(--ink);
+  background-color: var(--ltPurple);
+  padding: 1rem;
+  border-radius: 2px;
+  opacity: 1;
+}
+.label p {
+  padding-left: 0;
+}
+
+.second-work {
+  background-image: url("../tenzies.png");
+  height: 450px;
+  width: 100%;
+}
+.third-work {
+  background-image: url("../calculator.png");
+  height: 450px;
+  width: 100%;
+}
+
+
+/* ------Contact Sections style ---------- */
+
+
+/* ------Resume Sections style ---------- */
 
 /* ------Footer style ---------- */
