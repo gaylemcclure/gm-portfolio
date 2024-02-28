@@ -52,22 +52,18 @@ a {
   background-size: cover;
   opacity: 0.4;
   width: 100%;
-
 }
 
 .border {
   border: 4px solid var(--ink);
   width: 100%;
+  position: relative;
 }
-
-
-
 
 /* ------Header style ---------- */
 header {
   display: flex;
   flex-direction: row;
-  width: 100vw;
   background-color: var(--ink);
 }
 
@@ -105,9 +101,10 @@ nav a:hover {
   transform: scale(1.2);
 }
 
-
 /* ------Main Sections style ---------- */
-
+main {
+  margin-bottom: 5rem;
+}
 .hero {
   background-image: url("../pexels-pixabay-220118.jpg");
   height: 300px;
@@ -143,15 +140,13 @@ section p {
   padding: 0.5rem 1rem;
 }
 
-
-
 /* ------About Sections style ---------- */
 img.avatar {
   height: 150px;
   min-width: 150px;
   border-radius: 85px;
   object-fit: cover;
-  margin-left: 4rem;
+  margin-left: 1rem;
 }
 
 /* ------Work Sections style ---------- */
@@ -170,7 +165,7 @@ img.avatar {
   bottom: 2rem;
   color: var(--ink);
   background-color: var(--ltPurple);
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 2px;
   opacity: 1;
 }
@@ -187,23 +182,96 @@ img.avatar {
 
 #work a:hover {
   opacity: 0.8;
-  
+
   + .label {
     background-color: var(--dusk);
   }
-
-    
-  
 }
 
 .bg-color {
   background-color: red;
 }
 
-
 /* ------Contact Sections style ---------- */
 
+#contact .inner {
+  margin-bottom: 0;
+  gap: 6rem;
+}
+
+i {
+  padding-right: 1rem;
+  color: var(--ink);
+}
+
+a.icon {
+  color: var(--ink);
+  display: flex;
+}
 
 /* ------Resume Sections style ---------- */
 
 /* ------Footer style ---------- */
+footer {
+  background-color: var(--ink);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  color: white;
+}
+
+/* ------Media Queries ---------- */
+
+@media screen and (max-width: 1024px) {
+  section {
+    margin: 4rem 3rem;
+  }
+  .inner {
+    flex-wrap: wrap;
+  }
+  #contact .inner {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  section {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 2rem;
+  }
+  section h3 {
+    text-align: start;
+    border-right: none;
+    border-bottom: 2px solid var(--ink);
+    margin-bottom: 1rem;
+  }
+  .inner p {
+    padding: 0.5rem 0;
+  }
+  a {
+    font-size: 1rem;
+  }
+  #contact .inner {
+    margin-top: 2rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero h2 {
+    right: 1rem;
+    font-size: 1.25rem;
+  }
+  header {
+    flex-direction: column;
+  }
+  aside {
+    align-self: auto;
+  }
+}
